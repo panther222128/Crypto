@@ -1,5 +1,5 @@
 //
-//  CBCEncryptor.swift
+//  CBCDecryptor.swift
 //  Crypto
 //
 //  Created by Jun Ho JANG on 2023/05/12.
@@ -8,56 +8,59 @@
 import Foundation
 import CryptoSwift
 
-enum CBCEncryptorError: Error {
+enum CBCDecryptorError: Error {
     case cannotCreateFileURL
     case cannotLoadRawData
     case cannotLoadKeyBytes
     case cannotLoadIVBytes
+    case noEncryptedData
+    case cannotFindData
 }
 
-protocol CBCEncryptor {
-    var encryptedString: String? { get }
+protocol CBCDecryptor {
+    var decryptedData: Data? { get }
     
-    func encrypt() throws
+    func decrypt() throws
 }
 
-final class DefaultCBCEncryptor: CBCEncryptor {
+final class DefaultCBCDecryptor: CBCDecryptor {
     
-    private(set) var encryptedString: String?
+    private(set) var decryptedData: Data?
     
     init() {
-        self.encryptedString = nil
+        self.decryptedData = nil
     }
     
-    func encrypt() throws {
+    func decrypt() throws {
         do {
-            let data = try loadData()
+            let encryptedString = try loadData()
+            guard let encryptedData = Data(base64Encoded: encryptedString) else { throw CBCDecryptorError.cannotFindData }
             let key = try generateSymmetricKey(from: "Cera")
             let iv = try generateIV(from: "BangBus")
             let aes = try createAES(key: key, iv: iv)
-            let encryptedData = try aes.encrypt(data.bytes)
-            let base64EncodedData = Data(encryptedData).base64EncodedString()
-            print(base64EncodedData)
-            encryptedString = base64EncodedData
+            let target = encryptedData
+            let decryptedData = try aes.decrypt(target.bytes)
+            
+            self.decryptedData = Data(decryptedData)
         } catch let error {
             throw error
         }
     }
     
-    private func loadData() throws -> Data {
-        guard let dataPath = Bundle.main.path(forResource: "TestPDF", ofType: "pdf") else { throw CBCEncryptorError.cannotCreateFileURL }
+    private func loadData() throws -> String {
+        guard let dataPath = Bundle.main.path(forResource: "image", ofType: "txt") else { throw CBCDecryptorError.cannotCreateFileURL }
         let fileURL = URL(fileURLWithPath: dataPath)
         do {
-            let data = try Data(contentsOf: fileURL)
-            return data
+            let contents = try String(contentsOf: fileURL, encoding: .utf8)
+            return contents.trimmingCharacters(in: .whitespacesAndNewlines)
         } catch {
-            throw CBCEncryptorError.cannotLoadRawData
+            throw CBCDecryptorError.cannotLoadRawData
         }
     }
     
     private func generateSymmetricKey(from string: String) throws -> Data {
         let keyData = string.data(using: .utf8)
-        guard let keyBytes = keyData?.bytes else { throw CBCEncryptorError.cannotLoadKeyBytes }
+        guard let keyBytes = keyData?.bytes else { throw CBCDecryptorError.cannotLoadKeyBytes }
         let paddedKey = addPadding(keyBytes, size: 32, paddingByte: 0)
         
         return Data(paddedKey)
@@ -65,7 +68,7 @@ final class DefaultCBCEncryptor: CBCEncryptor {
     
     private func generateIV(from string: String) throws -> Data {
         let ivData = string.data(using: .utf8)
-        guard let ivBytes = ivData?.bytes else { throw CBCEncryptorError.cannotLoadIVBytes }
+        guard let ivBytes = ivData?.bytes else { throw CBCDecryptorError.cannotLoadIVBytes }
         let paddedIV = addPadding(ivBytes, size: 16, paddingByte: 0)
         
         return Data(paddedIV)

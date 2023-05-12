@@ -20,6 +20,10 @@
 		A074427A2A0DE1EC0007247B /* Lorem_ipsum.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A07442782A0DE1200007247B /* Lorem_ipsum.pdf */; };
 		A074427B2A0DE1EC0007247B /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A07442792A0DE1200007247B /* test.jpg */; };
 		A074427C2A0DE1EC0007247B /* image.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07442772A0DE1200007247B /* image.txt */; };
+		A074427E2A0DE6950007247B /* CBCDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074427D2A0DE6950007247B /* CBCDecryptor.swift */; };
+		A07442802A0DEFF40007247B /* CBCDecryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074427F2A0DEFF40007247B /* CBCDecryptorViewController.swift */; };
+		A07442822A0DF0010007247B /* CBCDecryptorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07442812A0DF0010007247B /* CBCDecryptorViewController.storyboard */; };
+		A07442842A0E08900007247B /* TestPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A07442832A0E08900007247B /* TestPDF.pdf */; };
 		A0AF9A7B2A08E42100F9D963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF9A7A2A08E42100F9D963 /* AppDelegate.swift */; };
 		A0AF9A7D2A08E42100F9D963 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF9A7C2A08E42100F9D963 /* SceneDelegate.swift */; };
 		A0AF9A872A08E42200F9D963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF9A852A08E42200F9D963 /* LaunchScreen.storyboard */; };
@@ -39,6 +43,10 @@
 		A07442772A0DE1200007247B /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
 		A07442782A0DE1200007247B /* Lorem_ipsum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lorem_ipsum.pdf; sourceTree = "<group>"; };
 		A07442792A0DE1200007247B /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		A074427D2A0DE6950007247B /* CBCDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCDecryptor.swift; sourceTree = "<group>"; };
+		A074427F2A0DEFF40007247B /* CBCDecryptorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCDecryptorViewController.swift; sourceTree = "<group>"; };
+		A07442812A0DF0010007247B /* CBCDecryptorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CBCDecryptorViewController.storyboard; sourceTree = "<group>"; };
+		A07442832A0E08900007247B /* TestPDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TestPDF.pdf; path = ../../../../TestPDF.pdf; sourceTree = "<group>"; };
 		A0AF9A772A08E42100F9D963 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF9A7A2A08E42100F9D963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0AF9A7C2A08E42100F9D963 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,8 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				A07442682A0DBF320007247B /* CBCEncryptor.swift */,
+				A074427D2A0DE6950007247B /* CBCDecryptor.swift */,
 				A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */,
 				A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */,
+				A074427F2A0DEFF40007247B /* CBCDecryptorViewController.swift */,
+				A07442812A0DF0010007247B /* CBCDecryptorViewController.storyboard */,
 			);
 			path = CBC;
 			sourceTree = "<group>";
@@ -117,6 +128,7 @@
 				A0AF9A832A08E42200F9D963 /* Assets.xcassets */,
 				A0AF9A852A08E42200F9D963 /* LaunchScreen.storyboard */,
 				A0AF9A882A08E42200F9D963 /* Info.plist */,
+				A07442832A0E08900007247B /* TestPDF.pdf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -220,6 +232,8 @@
 				A039016F2A09FB5C00AB5ED0 /* Assets.xcassets in Resources */,
 				A074426D2A0DC1840007247B /* CBCEncryptorViewController.storyboard in Resources */,
 				A02BC2952A0B1B0000151E3C /* PDFViewController.storyboard in Resources */,
+				A07442822A0DF0010007247B /* CBCDecryptorViewController.storyboard in Resources */,
+				A07442842A0E08900007247B /* TestPDF.pdf in Resources */,
 				A0AF9A872A08E42200F9D963 /* LaunchScreen.storyboard in Resources */,
 				A0AF9A972A08E90200F9D963 /* CryptoViewController.storyboard in Resources */,
 			);
@@ -238,7 +252,9 @@
 				A074426B2A0DC0FC0007247B /* CBCEncryptorViewController.swift in Sources */,
 				A02BC2932A0B199800151E3C /* PDFViewController.swift in Sources */,
 				A074426F2A0DE0890007247B /* GCMDecryptor.swift in Sources */,
+				A07442802A0DEFF40007247B /* CBCDecryptorViewController.swift in Sources */,
 				A03901622A09C7CE00AB5ED0 /* StoryboardInstantiable.swift in Sources */,
+				A074427E2A0DE6950007247B /* CBCDecryptor.swift in Sources */,
 				A0AF9A952A08E8F300F9D963 /* CryptoViewController.swift in Sources */,
 				A07442692A0DBF320007247B /* CBCEncryptor.swift in Sources */,
 			);
