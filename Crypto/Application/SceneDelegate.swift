@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         let navigationController = UINavigationController()
-        let cryptoViewController = CryptoViewController.instantiateViewController()
+        let cryptoViewController = CBCEncryptorViewController.instantiateViewController()
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02BC2932A0B199800151E3C /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02BC2922A0B199800151E3C /* PDFViewController.swift */; };
+		A02BC2952A0B1B0000151E3C /* PDFViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02BC2942A0B1B0000151E3C /* PDFViewController.storyboard */; };
 		A03901622A09C7CE00AB5ED0 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03901612A09C7CE00AB5ED0 /* StoryboardInstantiable.swift */; };
-		A03901662A09D1D500AB5ED0 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03901652A09D1D500AB5ED0 /* Crypto.swift */; };
+		A03901662A09D1D500AB5ED0 /* GCMEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03901652A09D1D500AB5ED0 /* GCMEncryptor.swift */; };
 		A039016F2A09FB5C00AB5ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF9A832A08E42200F9D963 /* Assets.xcassets */; };
-		A03901722A09FBD000AB5ED0 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A03901702A09FBD000AB5ED0 /* test.jpg */; };
-		A03901732A09FBD000AB5ED0 /* Lorem_ipsum.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A03901712A09FBD000AB5ED0 /* Lorem_ipsum.pdf */; };
+		A049FEBB2A0C7477002740E0 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A049FEBA2A0C7477002740E0 /* CryptoSwift */; };
+		A07442692A0DBF320007247B /* CBCEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07442682A0DBF320007247B /* CBCEncryptor.swift */; };
+		A074426B2A0DC0FC0007247B /* CBCEncryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */; };
+		A074426D2A0DC1840007247B /* CBCEncryptorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */; };
+		A074426F2A0DE0890007247B /* GCMDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074426E2A0DE0890007247B /* GCMDecryptor.swift */; };
+		A074427A2A0DE1EC0007247B /* Lorem_ipsum.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A07442782A0DE1200007247B /* Lorem_ipsum.pdf */; };
+		A074427B2A0DE1EC0007247B /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A07442792A0DE1200007247B /* test.jpg */; };
+		A074427C2A0DE1EC0007247B /* image.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07442772A0DE1200007247B /* image.txt */; };
 		A0AF9A7B2A08E42100F9D963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF9A7A2A08E42100F9D963 /* AppDelegate.swift */; };
 		A0AF9A7D2A08E42100F9D963 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF9A7C2A08E42100F9D963 /* SceneDelegate.swift */; };
 		A0AF9A872A08E42200F9D963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF9A852A08E42200F9D963 /* LaunchScreen.storyboard */; };
@@ -20,10 +28,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A02BC2922A0B199800151E3C /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		A02BC2942A0B1B0000151E3C /* PDFViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFViewController.storyboard; sourceTree = "<group>"; };
 		A03901612A09C7CE00AB5ED0 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
-		A03901652A09D1D500AB5ED0 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		A03901702A09FBD000AB5ED0 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpg; path = ../../../../Downloads/test.jpg; sourceTree = "<group>"; };
-		A03901712A09FBD000AB5ED0 /* Lorem_ipsum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Lorem_ipsum.pdf; path = ../../../../Downloads/Lorem_ipsum.pdf; sourceTree = "<group>"; };
+		A03901652A09D1D500AB5ED0 /* GCMEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMEncryptor.swift; sourceTree = "<group>"; };
+		A07442682A0DBF320007247B /* CBCEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCEncryptor.swift; sourceTree = "<group>"; };
+		A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCEncryptorViewController.swift; sourceTree = "<group>"; };
+		A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CBCEncryptorViewController.storyboard; sourceTree = "<group>"; };
+		A074426E2A0DE0890007247B /* GCMDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMDecryptor.swift; sourceTree = "<group>"; };
+		A07442772A0DE1200007247B /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
+		A07442782A0DE1200007247B /* Lorem_ipsum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lorem_ipsum.pdf; sourceTree = "<group>"; };
+		A07442792A0DE1200007247B /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		A0AF9A772A08E42100F9D963 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF9A7A2A08E42100F9D963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0AF9A7C2A08E42100F9D963 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +54,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A049FEBB2A0C7477002740E0 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A07442702A0DE0AB0007247B /* GCM */ = {
+			isa = PBXGroup;
+			children = (
+				A074426E2A0DE0890007247B /* GCMDecryptor.swift */,
+				A03901652A09D1D500AB5ED0 /* GCMEncryptor.swift */,
+				A0AF9A942A08E8F300F9D963 /* CryptoViewController.swift */,
+				A0AF9A962A08E90200F9D963 /* CryptoViewController.storyboard */,
+			);
+			path = GCM;
+			sourceTree = "<group>";
+		};
+		A07442712A0DE0CB0007247B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A03901612A09C7CE00AB5ED0 /* StoryboardInstantiable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A07442722A0DE0D70007247B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF9A7A2A08E42100F9D963 /* AppDelegate.swift */,
+				A0AF9A7C2A08E42100F9D963 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A07442732A0DE0E20007247B /* CBC */ = {
+			isa = PBXGroup;
+			children = (
+				A07442682A0DBF320007247B /* CBCEncryptor.swift */,
+				A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */,
+				A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */,
+			);
+			path = CBC;
+			sourceTree = "<group>";
+		};
+		A07442742A0DE0F20007247B /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				A02BC2922A0B199800151E3C /* PDFViewController.swift */,
+				A02BC2942A0B1B0000151E3C /* PDFViewController.storyboard */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		A07442752A0DE1150007247B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A07442782A0DE1200007247B /* Lorem_ipsum.pdf */,
+				A07442792A0DE1200007247B /* test.jpg */,
+				A07442772A0DE1200007247B /* image.txt */,
+				A0AF9A832A08E42200F9D963 /* Assets.xcassets */,
+				A0AF9A852A08E42200F9D963 /* LaunchScreen.storyboard */,
+				A0AF9A882A08E42200F9D963 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A0AF9A6E2A08E42100F9D963 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +140,12 @@
 		A0AF9A792A08E42100F9D963 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				A0AF9A7A2A08E42100F9D963 /* AppDelegate.swift */,
-				A0AF9A7C2A08E42100F9D963 /* SceneDelegate.swift */,
-				A0AF9A942A08E8F300F9D963 /* CryptoViewController.swift */,
-				A0AF9A962A08E90200F9D963 /* CryptoViewController.storyboard */,
-				A0AF9A832A08E42200F9D963 /* Assets.xcassets */,
-				A0AF9A852A08E42200F9D963 /* LaunchScreen.storyboard */,
-				A0AF9A882A08E42200F9D963 /* Info.plist */,
-				A03901612A09C7CE00AB5ED0 /* StoryboardInstantiable.swift */,
-				A03901652A09D1D500AB5ED0 /* Crypto.swift */,
-				A03901712A09FBD000AB5ED0 /* Lorem_ipsum.pdf */,
-				A03901702A09FBD000AB5ED0 /* test.jpg */,
+				A07442752A0DE1150007247B /* Resources */,
+				A07442722A0DE0D70007247B /* Application */,
+				A07442712A0DE0CB0007247B /* Utilities */,
+				A07442742A0DE0F20007247B /* PDF */,
+				A07442732A0DE0E20007247B /* CBC */,
+				A07442702A0DE0AB0007247B /* GCM */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -95,6 +166,9 @@
 			dependencies = (
 			);
 			name = Crypto;
+			packageProductDependencies = (
+				A049FEBA2A0C7477002740E0 /* CryptoSwift */,
+			);
 			productName = Crypto;
 			productReference = A0AF9A772A08E42100F9D963 /* Crypto.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +197,9 @@
 				Base,
 			);
 			mainGroup = A0AF9A6E2A08E42100F9D963;
+			packageReferences = (
+				A049FEB92A0C7477002740E0 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = A0AF9A782A08E42100F9D963 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,11 +214,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A074427A2A0DE1EC0007247B /* Lorem_ipsum.pdf in Resources */,
+				A074427B2A0DE1EC0007247B /* test.jpg in Resources */,
+				A074427C2A0DE1EC0007247B /* image.txt in Resources */,
 				A039016F2A09FB5C00AB5ED0 /* Assets.xcassets in Resources */,
+				A074426D2A0DC1840007247B /* CBCEncryptorViewController.storyboard in Resources */,
+				A02BC2952A0B1B0000151E3C /* PDFViewController.storyboard in Resources */,
 				A0AF9A872A08E42200F9D963 /* LaunchScreen.storyboard in Resources */,
 				A0AF9A972A08E90200F9D963 /* CryptoViewController.storyboard in Resources */,
-				A03901732A09FBD000AB5ED0 /* Lorem_ipsum.pdf in Resources */,
-				A03901722A09FBD000AB5ED0 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +234,13 @@
 			files = (
 				A0AF9A7B2A08E42100F9D963 /* AppDelegate.swift in Sources */,
 				A0AF9A7D2A08E42100F9D963 /* SceneDelegate.swift in Sources */,
-				A03901662A09D1D500AB5ED0 /* Crypto.swift in Sources */,
+				A03901662A09D1D500AB5ED0 /* GCMEncryptor.swift in Sources */,
+				A074426B2A0DC0FC0007247B /* CBCEncryptorViewController.swift in Sources */,
+				A02BC2932A0B199800151E3C /* PDFViewController.swift in Sources */,
+				A074426F2A0DE0890007247B /* GCMDecryptor.swift in Sources */,
 				A03901622A09C7CE00AB5ED0 /* StoryboardInstantiable.swift in Sources */,
 				A0AF9A952A08E8F300F9D963 /* CryptoViewController.swift in Sources */,
+				A07442692A0DBF320007247B /* CBCEncryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZJJVW89MW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = Crypto/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -324,7 +408,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZJJVW89MW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = Crypto/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -364,6 +448,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A049FEB92A0C7477002740E0 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A049FEBA2A0C7477002740E0 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A049FEB92A0C7477002740E0 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0AF9A6F2A08E42100F9D963 /* Project object */;
 }
