@@ -13,7 +13,6 @@ enum CBCDecryptorError: Error {
     case cannotLoadRawData
     case cannotLoadKeyBytes
     case cannotLoadIVBytes
-    case noEncryptedData
     case cannotFindData
 }
 
