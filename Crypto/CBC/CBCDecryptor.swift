@@ -35,7 +35,7 @@ final class DefaultCBCDecryptor: CBCDecryptor {
             let encryptedString = try loadData()
             guard let encryptedData = Data(base64Encoded: encryptedString) else { throw CBCDecryptorError.cannotFindData }
             let key = try generateSymmetricKey(from: "Cera")
-            let iv = try generateIV(from: "BangBus")
+            let iv = try generateIV(from: "asjnkgwqkddadhaq")
             let aes = try createAES(key: key, iv: iv)
             let target = encryptedData
             let decryptedData = try aes.decrypt(target.bytes)
@@ -58,19 +58,19 @@ final class DefaultCBCDecryptor: CBCDecryptor {
     }
     
     private func generateSymmetricKey(from string: String) throws -> Data {
-        let keyData = string.data(using: .utf8)
-        guard let keyBytes = keyData?.bytes else { throw CBCDecryptorError.cannotLoadKeyBytes }
-        let paddedKey = addPadding(keyBytes, size: 32, paddingByte: 0)
+        let passwordData = Array(string.utf8)
+        guard let sizedKey = try? PKCS5.PBKDF2(password: passwordData, salt: [67, 101, 114, 97]).calculate() else { throw CBCEncryptorError.cannotLoadKeyBytes }
+        let sizedKeyData = Data(sizedKey)
         
-        return Data(paddedKey)
+        return sizedKeyData
     }
     
     private func generateIV(from string: String) throws -> Data {
         let ivData = string.data(using: .utf8)
-        guard let ivBytes = ivData?.bytes else { throw CBCDecryptorError.cannotLoadIVBytes }
-        let paddedIV = addPadding(ivBytes, size: 16, paddingByte: 0)
+        print("IV: \(string)")
+        guard let ivBytes = ivData?.bytes else { throw CBCEncryptorError.cannotLoadIVBytes }
         
-        return Data(paddedIV)
+        return Data(ivBytes)
     }
     
     private func createAES(key: Data, iv: Data) throws -> CryptoSwift.AES {

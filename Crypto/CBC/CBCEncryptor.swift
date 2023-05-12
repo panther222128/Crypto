@@ -33,7 +33,7 @@ final class DefaultCBCEncryptor: CBCEncryptor {
         do {
             let data = try loadData()
             let key = try generateSymmetricKey(from: "Cera")
-            let iv = try generateIV(from: "BangBus")
+            let iv = try generateIV(from: "asjnkgwqkddadhaq")
             let aes = try createAES(key: key, iv: iv)
             let encryptedData = try aes.encrypt(data.bytes)
             let base64EncodedData = Data(encryptedData).base64EncodedString()
@@ -45,7 +45,7 @@ final class DefaultCBCEncryptor: CBCEncryptor {
     }
     
     private func loadData() throws -> Data {
-        guard let dataPath = Bundle.main.path(forResource: "TestPDF", ofType: "pdf") else { throw CBCEncryptorError.cannotCreateFileURL }
+        guard let dataPath = Bundle.main.path(forResource: "Cera", ofType: "txt") else { throw CBCEncryptorError.cannotCreateFileURL }
         let fileURL = URL(fileURLWithPath: dataPath)
         do {
             let data = try Data(contentsOf: fileURL)
@@ -56,19 +56,18 @@ final class DefaultCBCEncryptor: CBCEncryptor {
     }
     
     private func generateSymmetricKey(from string: String) throws -> Data {
-        let keyData = string.data(using: .utf8)
-        guard let keyBytes = keyData?.bytes else { throw CBCEncryptorError.cannotLoadKeyBytes }
-        let paddedKey = addPadding(keyBytes, size: 32, paddingByte: 0)
+        let passwordData = Array(string.utf8)
+        guard let sizedKey = try? PKCS5.PBKDF2(password: passwordData, salt: [67, 101, 114, 97]).calculate() else { throw CBCEncryptorError.cannotLoadKeyBytes }
+        let sizedKeyData = Data(sizedKey)
         
-        return Data(paddedKey)
+        return sizedKeyData
     }
     
     private func generateIV(from string: String) throws -> Data {
         let ivData = string.data(using: .utf8)
         guard let ivBytes = ivData?.bytes else { throw CBCEncryptorError.cannotLoadIVBytes }
-        let paddedIV = addPadding(ivBytes, size: 16, paddingByte: 0)
         
-        return Data(paddedIV)
+        return Data(ivBytes)
     }
     
     private func createAES(key: Data, iv: Data) throws -> CryptoSwift.AES {

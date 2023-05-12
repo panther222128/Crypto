@@ -21,7 +21,9 @@ final class CBCDecryptorViewController: UIViewController, StoryboardInstantiable
             try decryptor.decrypt()
             let data = decryptor.decryptedData
             DispatchQueue.main.async {
-                self.loadPDF(data: data ?? Data())
+                let string = String(data: data!, encoding: .utf8)
+                print(string)
+//                self.loadPDF(data: data ?? Data())
             }
         } catch let error {
             presentAlert(of: error)
