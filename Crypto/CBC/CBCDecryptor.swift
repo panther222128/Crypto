@@ -67,7 +67,6 @@ final class DefaultCBCDecryptor: CBCDecryptor {
     
     private func generateIV(from string: String) throws -> Data {
         let ivData = string.data(using: .utf8)
-        print("IV: \(string)")
         guard let ivBytes = ivData?.bytes else { throw CBCEncryptorError.cannotLoadIVBytes }
         
         return Data(ivBytes)
@@ -76,17 +75,5 @@ final class DefaultCBCDecryptor: CBCDecryptor {
     private func createAES(key: Data, iv: Data) throws -> CryptoSwift.AES {
         return try AES(key: key.bytes, blockMode: CBC(iv: iv.bytes), padding: .pkcs7)
     }
-    
-    private func addPadding(_ array: [UInt8], size: Int, paddingByte: UInt8) -> [UInt8] {
-        var paddedArray = array
-        
-        if paddedArray.count < size {
-            let paddingCount = size - paddedArray.count
-            let paddingBytes = Array(repeating: paddingByte, count: paddingCount)
-            paddedArray.append(contentsOf: paddingBytes)
-        }
-        
-        return paddedArray
-    }
-    
+
 }
