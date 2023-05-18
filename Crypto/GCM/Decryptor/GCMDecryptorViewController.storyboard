@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Decryptor View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="GCMDecryptorViewController" customModule="Crypto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Saw-A9-g6I" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="59" width="393" height="690"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-XM-PLc">
+                                <rect key="frame" x="16" y="783" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="previousPageButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DjF-On-moz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrW-E8-nGt">
+                                <rect key="frame" x="302" y="783" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="nextPageButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="E7h-H7-R5i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Saw-A9-g6I" secondAttribute="bottom" constant="69" id="OXA-Vv-CpQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NrW-E8-nGt" secondAttribute="bottom" id="Rlj-k6-Tin"/>
+                            <constraint firstItem="Saw-A9-g6I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Z9M-t4-t14"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3gb-XM-PLc" secondAttribute="bottom" id="fab-Uk-xFj"/>
+                            <constraint firstItem="3gb-XM-PLc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="gsJ-eC-99T"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NrW-E8-nGt" secondAttribute="trailing" constant="16" id="gw0-Kr-4S1"/>
+                            <constraint firstItem="Saw-A9-g6I" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="kAJ-bc-wF4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Saw-A9-g6I" secondAttribute="trailing" id="pf9-vu-Pma"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decryptedPDFView" destination="Saw-A9-g6I" id="7cs-PR-uUo"/>
+                        <outlet property="nextPageButton" destination="NrW-E8-nGt" id="XLW-k7-IZ3"/>
+                        <outlet property="previousPageButton" destination="3gb-XM-PLc" id="tDY-Qh-jNf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148.85496183206106" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

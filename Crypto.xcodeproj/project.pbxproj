@@ -9,18 +9,29 @@
 /* Begin PBXBuildFile section */
 		A02BC2932A0B199800151E3C /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02BC2922A0B199800151E3C /* PDFViewController.swift */; };
 		A02BC2952A0B1B0000151E3C /* PDFViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02BC2942A0B1B0000151E3C /* PDFViewController.storyboard */; };
+		A02F8F272A15A8E9009DCAF0 /* GCMDecryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F8F262A15A8E9009DCAF0 /* GCMDecryptorViewController.swift */; };
+		A02F8F292A15A8F6009DCAF0 /* GCMEncryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F8F282A15A8F6009DCAF0 /* GCMEncryptorViewController.swift */; };
+		A02F8F2B2A15A924009DCAF0 /* GCMDecryptorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02F8F2A2A15A924009DCAF0 /* GCMDecryptorViewController.storyboard */; };
+		A02F8F2D2A15A938009DCAF0 /* GCMEncryptorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02F8F2C2A15A938009DCAF0 /* GCMEncryptorViewController.storyboard */; };
+		A02F8F302A15BBE6009DCAF0 /* GCMSample.bin in Resources */ = {isa = PBXBuildFile; fileRef = A02F8F2F2A15BBE6009DCAF0 /* GCMSample.bin */; };
+		A02F8F322A15CF22009DCAF0 /* GCMSample2.bin in Resources */ = {isa = PBXBuildFile; fileRef = A02F8F312A15CF22009DCAF0 /* GCMSample2.bin */; };
+		A02F8F342A15D2ED009DCAF0 /* GCMSample3.bin in Resources */ = {isa = PBXBuildFile; fileRef = A02F8F332A15D2ED009DCAF0 /* GCMSample3.bin */; };
+		A02F8F362A15D5CA009DCAF0 /* LargeGCM.bin in Resources */ = {isa = PBXBuildFile; fileRef = A02F8F352A15D5CA009DCAF0 /* LargeGCM.bin */; };
+		A0302EA22A14B32300FE0043 /* Encrypted.bin in Resources */ = {isa = PBXBuildFile; fileRef = A0302EA12A14B32300FE0043 /* Encrypted.bin */; };
+		A0302EA32A14B5B000FE0043 /* Encrypted in Resources */ = {isa = PBXBuildFile; fileRef = A0302EA02A14B1A300FE0043 /* Encrypted */; };
+		A0302EA52A14BBA600FE0043 /* large.bin in Resources */ = {isa = PBXBuildFile; fileRef = A0302EA42A14BBA600FE0043 /* large.bin */; };
 		A03901622A09C7CE00AB5ED0 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03901612A09C7CE00AB5ED0 /* StoryboardInstantiable.swift */; };
 		A03901662A09D1D500AB5ED0 /* GCMEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03901652A09D1D500AB5ED0 /* GCMEncryptor.swift */; };
 		A039016F2A09FB5C00AB5ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF9A832A08E42200F9D963 /* Assets.xcassets */; };
 		A049FEBB2A0C7477002740E0 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A049FEBA2A0C7477002740E0 /* CryptoSwift */; };
-		A07442692A0DBF320007247B /* CBCEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07442682A0DBF320007247B /* CBCEncryptor.swift */; };
+		A07442692A0DBF320007247B /* DataCBCEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07442682A0DBF320007247B /* DataCBCEncryptor.swift */; };
 		A074426B2A0DC0FC0007247B /* CBCEncryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */; };
 		A074426D2A0DC1840007247B /* CBCEncryptorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */; };
 		A074426F2A0DE0890007247B /* GCMDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074426E2A0DE0890007247B /* GCMDecryptor.swift */; };
 		A074427A2A0DE1EC0007247B /* Lorem_ipsum.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A07442782A0DE1200007247B /* Lorem_ipsum.pdf */; };
 		A074427B2A0DE1EC0007247B /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A07442792A0DE1200007247B /* test.jpg */; };
 		A074427C2A0DE1EC0007247B /* image.txt in Resources */ = {isa = PBXBuildFile; fileRef = A07442772A0DE1200007247B /* image.txt */; };
-		A074427E2A0DE6950007247B /* CBCDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074427D2A0DE6950007247B /* CBCDecryptor.swift */; };
+		A074427E2A0DE6950007247B /* DataCBCDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074427D2A0DE6950007247B /* DataCBCDecryptor.swift */; };
 		A07442802A0DEFF40007247B /* CBCDecryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074427F2A0DEFF40007247B /* CBCDecryptorViewController.swift */; };
 		A07442822A0DF0010007247B /* CBCDecryptorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07442812A0DF0010007247B /* CBCDecryptorViewController.storyboard */; };
 		A07442842A0E08900007247B /* TestPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A07442832A0E08900007247B /* TestPDF.pdf */; };
@@ -30,21 +41,39 @@
 		A0AF9A872A08E42200F9D963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF9A852A08E42200F9D963 /* LaunchScreen.storyboard */; };
 		A0AF9A952A08E8F300F9D963 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF9A942A08E8F300F9D963 /* CryptoViewController.swift */; };
 		A0AF9A972A08E90200F9D963 /* CryptoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF9A962A08E90200F9D963 /* CryptoViewController.storyboard */; };
+		A0CE55152A1301C700A5135F /* CBCDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE55142A1301C700A5135F /* CBCDecryptor.swift */; };
+		A0CE55172A13074B00A5135F /* CBCEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE55162A13074B00A5135F /* CBCEncryptor.swift */; };
+		A0CE551B2A13553300A5135F /* PDFTXT.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0CE551A2A13553300A5135F /* PDFTXT.txt */; };
+		A0CE551F2A13665900A5135F /* PDFTXT2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0CE551E2A13665900A5135F /* PDFTXT2.txt */; };
+		A0DCD8192A15E81D00580017 /* GCMDecryptorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD8182A15E81D00580017 /* GCMDecryptorViewModel.swift */; };
+		A0DCD81B2A15E85B00580017 /* PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD81A2A15E85B00580017 /* PDF.swift */; };
+		A0DCD81D2A15F10900580017 /* large.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A0DCD81C2A15F10900580017 /* large.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A02BC2922A0B199800151E3C /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		A02BC2942A0B1B0000151E3C /* PDFViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFViewController.storyboard; sourceTree = "<group>"; };
+		A02F8F262A15A8E9009DCAF0 /* GCMDecryptorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMDecryptorViewController.swift; sourceTree = "<group>"; };
+		A02F8F282A15A8F6009DCAF0 /* GCMEncryptorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMEncryptorViewController.swift; sourceTree = "<group>"; };
+		A02F8F2A2A15A924009DCAF0 /* GCMDecryptorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GCMDecryptorViewController.storyboard; sourceTree = "<group>"; };
+		A02F8F2C2A15A938009DCAF0 /* GCMEncryptorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GCMEncryptorViewController.storyboard; sourceTree = "<group>"; };
+		A02F8F2F2A15BBE6009DCAF0 /* GCMSample.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = GCMSample.bin; path = ../../../../../Downloads/GCMSample.bin; sourceTree = "<group>"; };
+		A02F8F312A15CF22009DCAF0 /* GCMSample2.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = GCMSample2.bin; path = ../../../../../Downloads/GCMSample2.bin; sourceTree = "<group>"; };
+		A02F8F332A15D2ED009DCAF0 /* GCMSample3.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = GCMSample3.bin; path = ../../../../../Downloads/GCMSample3.bin; sourceTree = "<group>"; };
+		A02F8F352A15D5CA009DCAF0 /* LargeGCM.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LargeGCM.bin; path = ../../../../../Downloads/LargeGCM.bin; sourceTree = "<group>"; };
+		A0302EA02A14B1A300FE0043 /* Encrypted */ = {isa = PBXFileReference; lastKnownFileType = file; name = Encrypted; path = ../../../../../Downloads/Encrypted; sourceTree = "<group>"; };
+		A0302EA12A14B32300FE0043 /* Encrypted.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = Encrypted.bin; path = ../../../../../Downloads/Encrypted.bin; sourceTree = "<group>"; };
+		A0302EA42A14BBA600FE0043 /* large.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = large.bin; path = ../../../../../Downloads/large.bin; sourceTree = "<group>"; };
 		A03901612A09C7CE00AB5ED0 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		A03901652A09D1D500AB5ED0 /* GCMEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMEncryptor.swift; sourceTree = "<group>"; };
-		A07442682A0DBF320007247B /* CBCEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCEncryptor.swift; sourceTree = "<group>"; };
+		A07442682A0DBF320007247B /* DataCBCEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCBCEncryptor.swift; sourceTree = "<group>"; };
 		A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCEncryptorViewController.swift; sourceTree = "<group>"; };
 		A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CBCEncryptorViewController.storyboard; sourceTree = "<group>"; };
 		A074426E2A0DE0890007247B /* GCMDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMDecryptor.swift; sourceTree = "<group>"; };
 		A07442772A0DE1200007247B /* image.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.txt; sourceTree = "<group>"; };
 		A07442782A0DE1200007247B /* Lorem_ipsum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lorem_ipsum.pdf; sourceTree = "<group>"; };
 		A07442792A0DE1200007247B /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
-		A074427D2A0DE6950007247B /* CBCDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCDecryptor.swift; sourceTree = "<group>"; };
+		A074427D2A0DE6950007247B /* DataCBCDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCBCDecryptor.swift; sourceTree = "<group>"; };
 		A074427F2A0DEFF40007247B /* CBCDecryptorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCDecryptorViewController.swift; sourceTree = "<group>"; };
 		A07442812A0DF0010007247B /* CBCDecryptorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CBCDecryptorViewController.storyboard; sourceTree = "<group>"; };
 		A07442832A0E08900007247B /* TestPDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TestPDF.pdf; path = ../../../../TestPDF.pdf; sourceTree = "<group>"; };
@@ -57,6 +86,13 @@
 		A0AF9A882A08E42200F9D963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF9A942A08E8F300F9D963 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
 		A0AF9A962A08E90200F9D963 /* CryptoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CryptoViewController.storyboard; sourceTree = "<group>"; };
+		A0CE55142A1301C700A5135F /* CBCDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCDecryptor.swift; sourceTree = "<group>"; };
+		A0CE55162A13074B00A5135F /* CBCEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCEncryptor.swift; sourceTree = "<group>"; };
+		A0CE551A2A13553300A5135F /* PDFTXT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PDFTXT.txt; path = ../../../../../Downloads/PDFTXT.txt; sourceTree = "<group>"; };
+		A0CE551E2A13665900A5135F /* PDFTXT2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PDFTXT2.txt; path = ../../../../../Downloads/PDFTXT2.txt; sourceTree = "<group>"; };
+		A0DCD8182A15E81D00580017 /* GCMDecryptorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMDecryptorViewModel.swift; sourceTree = "<group>"; };
+		A0DCD81A2A15E85B00580017 /* PDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF.swift; sourceTree = "<group>"; };
+		A0DCD81C2A15F10900580017 /* large.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = large.pdf; path = ../../../../../Downloads/large.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +107,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A07442702A0DE0AB0007247B /* GCM */ = {
+		A02F8F242A15A8C2009DCAF0 /* Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				A03901652A09D1D500AB5ED0 /* GCMEncryptor.swift */,
+				A02F8F282A15A8F6009DCAF0 /* GCMEncryptorViewController.swift */,
+				A02F8F2C2A15A938009DCAF0 /* GCMEncryptorViewController.storyboard */,
+			);
+			path = Encryptor;
+			sourceTree = "<group>";
+		};
+		A02F8F252A15A8CA009DCAF0 /* Decryptor */ = {
 			isa = PBXGroup;
 			children = (
 				A074426E2A0DE0890007247B /* GCMDecryptor.swift */,
-				A03901652A09D1D500AB5ED0 /* GCMEncryptor.swift */,
+				A02F8F262A15A8E9009DCAF0 /* GCMDecryptorViewController.swift */,
+				A02F8F2A2A15A924009DCAF0 /* GCMDecryptorViewController.storyboard */,
+				A0DCD8182A15E81D00580017 /* GCMDecryptorViewModel.swift */,
+			);
+			path = Decryptor;
+			sourceTree = "<group>";
+		};
+		A07442702A0DE0AB0007247B /* GCM */ = {
+			isa = PBXGroup;
+			children = (
+				A02F8F252A15A8CA009DCAF0 /* Decryptor */,
+				A02F8F242A15A8C2009DCAF0 /* Encryptor */,
 				A0AF9A942A08E8F300F9D963 /* CryptoViewController.swift */,
 				A0AF9A962A08E90200F9D963 /* CryptoViewController.storyboard */,
 			);
@@ -102,12 +159,8 @@
 		A07442732A0DE0E20007247B /* CBC */ = {
 			isa = PBXGroup;
 			children = (
-				A07442682A0DBF320007247B /* CBCEncryptor.swift */,
-				A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */,
-				A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */,
-				A074427D2A0DE6950007247B /* CBCDecryptor.swift */,
-				A074427F2A0DEFF40007247B /* CBCDecryptorViewController.swift */,
-				A07442812A0DF0010007247B /* CBCDecryptorViewController.storyboard */,
+				A0CE55192A13075C00A5135F /* Encryptor */,
+				A0CE55182A13075200A5135F /* Decryptor */,
 			);
 			path = CBC;
 			sourceTree = "<group>";
@@ -117,6 +170,7 @@
 			children = (
 				A02BC2922A0B199800151E3C /* PDFViewController.swift */,
 				A02BC2942A0B1B0000151E3C /* PDFViewController.storyboard */,
+				A0DCD81A2A15E85B00580017 /* PDF.swift */,
 			);
 			path = PDF;
 			sourceTree = "<group>";
@@ -132,6 +186,16 @@
 				A0AF9A882A08E42200F9D963 /* Info.plist */,
 				A07442832A0E08900007247B /* TestPDF.pdf */,
 				A07442852A0E1BA90007247B /* Cera.txt */,
+				A0CE551A2A13553300A5135F /* PDFTXT.txt */,
+				A0CE551E2A13665900A5135F /* PDFTXT2.txt */,
+				A0302EA02A14B1A300FE0043 /* Encrypted */,
+				A0302EA12A14B32300FE0043 /* Encrypted.bin */,
+				A0302EA42A14BBA600FE0043 /* large.bin */,
+				A02F8F2F2A15BBE6009DCAF0 /* GCMSample.bin */,
+				A02F8F312A15CF22009DCAF0 /* GCMSample2.bin */,
+				A02F8F332A15D2ED009DCAF0 /* GCMSample3.bin */,
+				A02F8F352A15D5CA009DCAF0 /* LargeGCM.bin */,
+				A0DCD81C2A15F10900580017 /* large.pdf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -163,6 +227,28 @@
 				A07442702A0DE0AB0007247B /* GCM */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		A0CE55182A13075200A5135F /* Decryptor */ = {
+			isa = PBXGroup;
+			children = (
+				A074427D2A0DE6950007247B /* DataCBCDecryptor.swift */,
+				A0CE55142A1301C700A5135F /* CBCDecryptor.swift */,
+				A074427F2A0DEFF40007247B /* CBCDecryptorViewController.swift */,
+				A07442812A0DF0010007247B /* CBCDecryptorViewController.storyboard */,
+			);
+			path = Decryptor;
+			sourceTree = "<group>";
+		};
+		A0CE55192A13075C00A5135F /* Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				A07442682A0DBF320007247B /* DataCBCEncryptor.swift */,
+				A0CE55162A13074B00A5135F /* CBCEncryptor.swift */,
+				A074426A2A0DC0FC0007247B /* CBCEncryptorViewController.swift */,
+				A074426C2A0DC1840007247B /* CBCEncryptorViewController.storyboard */,
+			);
+			path = Encryptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,17 +315,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02F8F342A15D2ED009DCAF0 /* GCMSample3.bin in Resources */,
+				A0302EA32A14B5B000FE0043 /* Encrypted in Resources */,
 				A074427A2A0DE1EC0007247B /* Lorem_ipsum.pdf in Resources */,
 				A074427B2A0DE1EC0007247B /* test.jpg in Resources */,
 				A074427C2A0DE1EC0007247B /* image.txt in Resources */,
+				A02F8F362A15D5CA009DCAF0 /* LargeGCM.bin in Resources */,
 				A039016F2A09FB5C00AB5ED0 /* Assets.xcassets in Resources */,
+				A02F8F2B2A15A924009DCAF0 /* GCMDecryptorViewController.storyboard in Resources */,
+				A0DCD81D2A15F10900580017 /* large.pdf in Resources */,
 				A074426D2A0DC1840007247B /* CBCEncryptorViewController.storyboard in Resources */,
 				A07442862A0E1BA90007247B /* Cera.txt in Resources */,
+				A0302EA22A14B32300FE0043 /* Encrypted.bin in Resources */,
+				A0CE551B2A13553300A5135F /* PDFTXT.txt in Resources */,
 				A02BC2952A0B1B0000151E3C /* PDFViewController.storyboard in Resources */,
 				A07442822A0DF0010007247B /* CBCDecryptorViewController.storyboard in Resources */,
+				A02F8F2D2A15A938009DCAF0 /* GCMEncryptorViewController.storyboard in Resources */,
+				A0302EA52A14BBA600FE0043 /* large.bin in Resources */,
+				A0CE551F2A13665900A5135F /* PDFTXT2.txt in Resources */,
 				A07442842A0E08900007247B /* TestPDF.pdf in Resources */,
+				A02F8F322A15CF22009DCAF0 /* GCMSample2.bin in Resources */,
 				A0AF9A872A08E42200F9D963 /* LaunchScreen.storyboard in Resources */,
 				A0AF9A972A08E90200F9D963 /* CryptoViewController.storyboard in Resources */,
+				A02F8F302A15BBE6009DCAF0 /* GCMSample.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,17 +348,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02F8F272A15A8E9009DCAF0 /* GCMDecryptorViewController.swift in Sources */,
+				A0DCD81B2A15E85B00580017 /* PDF.swift in Sources */,
+				A0CE55172A13074B00A5135F /* CBCEncryptor.swift in Sources */,
 				A0AF9A7B2A08E42100F9D963 /* AppDelegate.swift in Sources */,
+				A0CE55152A1301C700A5135F /* CBCDecryptor.swift in Sources */,
 				A0AF9A7D2A08E42100F9D963 /* SceneDelegate.swift in Sources */,
+				A0DCD8192A15E81D00580017 /* GCMDecryptorViewModel.swift in Sources */,
 				A03901662A09D1D500AB5ED0 /* GCMEncryptor.swift in Sources */,
 				A074426B2A0DC0FC0007247B /* CBCEncryptorViewController.swift in Sources */,
 				A02BC2932A0B199800151E3C /* PDFViewController.swift in Sources */,
 				A074426F2A0DE0890007247B /* GCMDecryptor.swift in Sources */,
 				A07442802A0DEFF40007247B /* CBCDecryptorViewController.swift in Sources */,
+				A02F8F292A15A8F6009DCAF0 /* GCMEncryptorViewController.swift in Sources */,
 				A03901622A09C7CE00AB5ED0 /* StoryboardInstantiable.swift in Sources */,
-				A074427E2A0DE6950007247B /* CBCDecryptor.swift in Sources */,
+				A074427E2A0DE6950007247B /* DataCBCDecryptor.swift in Sources */,
 				A0AF9A952A08E8F300F9D963 /* CryptoViewController.swift in Sources */,
-				A07442692A0DBF320007247B /* CBCEncryptor.swift in Sources */,
+				A07442692A0DBF320007247B /* DataCBCEncryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +510,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +538,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -16,13 +16,7 @@ enum CBCDecryptorError: Error {
     case cannotFindData
 }
 
-protocol CBCDecryptor {
-    var decryptedData: Data? { get }
-    
-    func decrypt() throws
-}
-
-final class DefaultCBCDecryptor: CBCDecryptor {
+final class DataCBCDecryptor {
     
     private(set) var decryptedData: Data?
     
@@ -45,7 +39,7 @@ final class DefaultCBCDecryptor: CBCDecryptor {
             throw error
         }
     }
-    
+
     private func loadData() throws -> String {
         guard let dataPath = Bundle.main.path(forResource: "image", ofType: "txt") else { throw CBCDecryptorError.cannotCreateFileURL }
         let fileURL = URL(fileURLWithPath: dataPath)
@@ -73,7 +67,7 @@ final class DefaultCBCDecryptor: CBCDecryptor {
     }
     
     private func createAES(key: Data, iv: Data) throws -> CryptoSwift.AES {
-        return try AES(key: key.bytes, blockMode: CBC(iv: iv.bytes), padding: .pkcs7)
+        return try AES(key: key.bytes, blockMode: CBC(iv: iv.bytes))
     }
 
 }

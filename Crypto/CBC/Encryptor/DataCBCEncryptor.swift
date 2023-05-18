@@ -15,13 +15,7 @@ enum CBCEncryptorError: Error {
     case cannotLoadIVBytes
 }
 
-protocol CBCEncryptor {
-    var encryptedString: String? { get }
-    
-    func encrypt() throws
-}
-
-final class DefaultCBCEncryptor: CBCEncryptor {
+final class DataCBCEncryptor {
     
     private(set) var encryptedString: String?
     
@@ -57,21 +51,22 @@ final class DefaultCBCEncryptor: CBCEncryptor {
     
     private func generateSymmetricKey(from string: String) throws -> Data {
         let passwordData = Array(string.utf8)
-        guard let sizedKey = try? PKCS5.PBKDF2(password: passwordData, salt: [67, 101, 114, 97]).calculate() else { throw CBCEncryptorError.cannotLoadKeyBytes }
+        let salt = Array<UInt8>.init(hex: String(string.prefix(32)))
+        guard let sizedKey = try? PKCS5.PBKDF2(password: passwordData, salt: salt).calculate() else { throw CBCEncryptorError.cannotLoadKeyBytes }
         let sizedKeyData = Data(sizedKey)
-        
+        print(sizedKeyData.bytes)
         return sizedKeyData
     }
     
     private func generateIV(from string: String) throws -> Data {
         let ivData = string.data(using: .utf8)
         guard let ivBytes = ivData?.bytes else { throw CBCEncryptorError.cannotLoadIVBytes }
-        
+        print(ivBytes)
         return Data(ivBytes)
     }
     
     private func createAES(key: Data, iv: Data) throws -> CryptoSwift.AES {
-        return try AES(key: key.bytes, blockMode: CBC(iv: iv.bytes), padding: .pkcs7)
+        return try AES(key: key.bytes, blockMode: CBC(iv: iv.bytes))
     }
 
 }

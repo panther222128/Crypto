@@ -13,7 +13,7 @@ final class CryptoViewController: UIViewController, StoryboardInstantiable {
     
     private var data: Data?
     private var encryptor: Encryptor?
-    private var decryptor: Decryptor?
+    private var decryptor: GCMDecryptor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,7 @@ final class CryptoViewController: UIViewController, StoryboardInstantiable {
     
     private func decrypt() {
         do {
-            try decryptor?.decrypt()
+//            try decryptor?.decrypt()
         } catch let error {
             presentAlert(of: error)
         }
@@ -69,7 +69,7 @@ final class CryptoViewController: UIViewController, StoryboardInstantiable {
     private func setupDecryptor() {
         guard let encryptedData = encryptor?.encryptedData else { return }
         guard let symmetricKey = encryptor?.symmetricKey else { return }
-        decryptor = DefaultDecryptor(encryptedData: encryptedData, key: symmetricKey)
+//        decryptor = DefaultGCMDecryptor(encryptedData: encryptedData, key: symmetricKey)
     }
     
     private func setupData() throws {

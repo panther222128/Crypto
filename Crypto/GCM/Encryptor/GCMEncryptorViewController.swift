@@ -1,23 +1,16 @@
 //
-//  CBCEncryptorViewController.swift
+//  GCMEncryptorViewController.swift
 //  Crypto
 //
-//  Created by Jun Ho JANG on 2023/05/12.
+//  Created by Jun Ho JANG on 2023/05/18.
 //
 
 import UIKit
 
-final class CBCEncryptorViewController: UIViewController, StoryboardInstantiable {
-    
-    private let cbcEncryptor: CBCEncryptor = DefaultCBCEncryptor()
+final class GCMEncryptorViewController: UIViewController, StoryboardInstantiable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        do {
-            try cbcEncryptor.encrypt()
-        } catch let error {
-            presentAlert(of: error)
-        }
     }
     
     private func presentAlert(of error: Error) {
